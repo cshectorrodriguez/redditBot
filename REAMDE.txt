@@ -1,0 +1,41 @@
+--- INITIALIZATION PROCESS ---
+1)	Open "main.py"
+2)	Enter Discord/Reddit Token infromation on lines 12-20 (see links below for help)
+
+
+Helpful Links for Discord/Reddit Tokens:
+*	How to create create Discord bot: watch 2:30 - 6:00 https://www.youtube.com/watch?v=7rU_KyudGBY
+*	How to create Reddit OAuth2 Token: https://www.reddit.com/prefs/apps
+*	Instructions guide for Reddit OAuth2 Token: https://github.com/reddit-archive/reddit/wiki/OAuth2
+
+
+
+--- SETUP PROCESS IN COMMAND LINE ---
+#Use to install necessary packages
+1)	sudo apt-get install tmux
+2)	sudo apt-get install python3-pip
+
+#Use to install necessary libraries for api calls
+3)	pip3 install discord
+4)	pip3 install asyncpraw
+5)	pip3 install google
+
+
+#Use to detach session and run indefinitely in the backgroud
+6)	tmux
+7)	python3 main.py
+8)	ctrl+b, d
+
+
+
+--- TERMINATE PROCESS IN COMMAND LINE ---
+
+#Use to re-attach the session and terminate program execution
+1)	tmux attach
+2)	ctrl+c
+
+
+
+--- HOW TO INJECT SUBREDDITS INTO DB WITHOUT RUNNING BOT --- 
+1)	open file "inject_into_db.py"
+2)	edit variable "subreddits" on line 3 to include wanted list of subreddits
